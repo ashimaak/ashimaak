@@ -95,9 +95,9 @@
   <!-- ── LEFT CONTENT ── -->
 
   <!-- Tag pill -->
-  <rect x="80" y="80" width="280" height="36" rx="18" fill="#40916C" opacity="0.3"/>
-  <rect x="80" y="80" width="280" height="36" rx="18" fill="none" stroke="#74C69D" stroke-width="1.5" opacity="0.6"/>
-  <text x="170" y="104" font-family="'Georgia', serif" font-size="13" fill="#74C69D" font-weight="600" letter-spacing="1.5" text-anchor="middle">HORTICULTURE · LANDSCAPE DESIGN</text>
+  <rect x="80" y="80" width="360" height="36" rx="18" fill="#40916C" opacity="0.3"/>
+  <rect x="80" y="80" width="360" height="36" rx="18" fill="none" stroke="#74C69D" stroke-width="1.5" opacity="0.6"/>
+  <text x="260" y="104" font-family="'Arial', sans-serif" font-size="13" fill="#74C69D" font-weight="600" letter-spacing="1.5" text-anchor="middle">HORTICULTURE · LANDSCAPE DESIGN</text>
 
   <!-- Name -->
   <text x="80" y="185" font-family="'Georgia', 'Times New Roman', serif" font-size="68" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Ashima</text>
