@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashima Abdul Kareem — Horticulturist & Landscape Designer</title>
+  <meta name="description" content="Portfolio of Ashima Abdul Kareem — M.Sc Horticulture, AutoCAD-certified Landscape Designer, Published Researcher. Based in Abu Dhabi, UAE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-deep:   #1B4332;
+      --green-mid:    #2D6A4F;
+      --green-sage:   #40916C;
+      --green-light:  #74C69D;
+      --green-pale:   #D8F3DC;
+      --cream:        #FEFAE0;
+      --cream-dark:   #F4EFD4;
+      --gold:         #C8973C;
+      --gold-light:   #E8C87A;
+      --text-dark:    #1C2B20;
+      --text-mid:     #3D5144;
+      --text-light:   #6B7F70;
+      --white:        #FFFFFF;
+      --shadow-sm:    0 2px 8px rgba(27,67,50,0.08);
+      --shadow-md:    0 6px 24px rgba(27,67,50,0.12);
+      --shadow-lg:    0 16px 48px rgba(27,67,50,0.16);
+      --radius:       12px;
+      --radius-lg:    20px;
+      --transition:   all 0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background: var(--cream);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(27,67,50,0.97);
+      backdrop-filter: blur(12px);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--cream);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-logo span { color: var(--gold-light); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(254,250,224,0.8);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--white) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600 !important;
+    }
+
+    .nav-cta:hover { background: var(--gold-light); color: var(--green-deep) !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: var(--green-deep);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.06;
+      background-image:
+        radial-gradient(circle at 20% 50%, #74C69D 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, #40916C 0%, transparent 40%),
+        radial-gradient(circle at 60% 80%, #2D6A4F 0%, transparent 50%);
+    }
+
+    /* Decorative leaf shapes */
+    .leaf-deco {
+      position: absolute;
+      opacity: 0.07;
+      pointer-events: none;
+    }
+
+    .leaf-deco.top-right {
+      top: -60px; right: -60px;
+      width: 400px; height: 400px;
+    }
+
+    .leaf-deco.bottom-left {
+      bottom: -80px; left: -40px;
+      width: 350px; height: 350px;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(200,151,60,0.2);
+      border: 1px solid rgba(200,151,60,0.4);
+      color: var(--gold-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-tag::before { content: '🌿'; }
+
+    h1.hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+
+    h1.hero-name em {
+      font-style: italic;
+      color: var(--green-light);
+    }
+
+    .hero-title {
+      font-size: 1.1rem;
+      color: var(--green-light);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.3px;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: rgba(254,250,224,0.75);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .pill {
+      background: rgba(116,198,157,0.15);
+      border: 1px solid rgba(116,198,157,0.3);
+      color: var(--green-light);
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(200,151,60,0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      color: var(--green-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,151,60,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--cream);
+      border: 1.5px solid rgba(254,250,224,0.35);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--green-light);
+      color: var(--green-light);
+      transform: translateY(-2px);
+    }
+
+    /* Hero avatar */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .avatar-ring {
+      position: relative;
+      width: 320px;
+      height: 320px;
+    }
+
+    .avatar-ring::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, var(--gold), var(--green-light), var(--gold));
+      animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .avatar-inner {
+      position: absolute;
+      inset: 4px;
+      border-radius: 50%;
+      background: var(--green-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .avatar-svg {
+      width: 220px;
+      height: 220px;
+      opacity: 0.9;
+    }
+
+    .hero-stats {
+      position: absolute;
+      right: -30px;
+      bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .stat-card {
+      background: rgba(254,250,224,0.12);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(254,250,224,0.2);
+      border-radius: var(--radius);
+      padding: 0.75rem 1rem;
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .stat-card .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      display: block;
+    }
+
+    .stat-card .label {
+      font-size: 0.72rem;
+      color: rgba(254,250,224,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 2rem; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--green-sage);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 24px;
+      height: 2px;
+      background: var(--green-sage);
+      display: inline-block;
+    }
+
+    h2.section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--green-deep);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--green-pale);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      border-left: 4px solid var(--green-sage);
+    }
+
+    .about-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--green-deep);
+      margin-bottom: 1rem;
+    }
+
+    .info-row {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .info-row .icon { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .info-row .key { color: var(--text-light); min-width: 80px; font-weight: 500; }
+    .info-row .val { color: var(--text-dark); font-weight: 400; }
+
+    .about-text p {
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+
+    .about-highlight {
+      background: var(--green-pale);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      border-left: 3px solid var(--green-sage);
+      font-style: italic;
+      color: var(--green-deep);
+      font-size: 0.95rem;
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--cream); }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border-top: 3px solid transparent;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-top-color: var(--green-sage);
+    }
+
+    .skill-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .skill-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--green-deep);
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-list {
+      list-style: none;
+    }
+
+    .skill-list li {
+      font-size: 0.875rem;
+      color: var(--text-mid);
+      padding: 0.3rem 0;
+      border-bottom: 1px solid var(--cream-dark);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-list li:last-child { border-bottom: none; }
+
+    .skill-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green-light);
+      flex-shrink: 0;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--white); }
+
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--green-sage), var(--green-pale));
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: 8px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--green-sage);
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 2px var(--green-sage);
+    }
+
+    .timeline-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .timeline-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-role {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green-deep);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .timeline-date {
+      background: var(--green-pale);
+      color: var(--green-mid);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .timeline-org {
+      font-size: 0.9rem;
+      color: var(--green-sage);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-points {
+      list-style: none;
+    }
+
+    .timeline-points li {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      padding: 0.3rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .timeline-points li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--green-sage);
+      font-size: 0.75rem;
+      top: 0.4rem;
+    }
+
+    /* ── EDUCATION ── */
+    #education { background: var(--green-deep); }
+
+    #education .section-label { color: var(--green-light); }
+    #education .section-label::before { background: var(--green-light); }
+    #education h2.section-title { color: var(--white); }
+    #education .section-sub { color: rgba(254,250,224,0.6); }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .edu-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      transition: var(--transition);
+    }
+
+    .edu-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-3px);
+    }
+
+    .edu-degree {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .edu-spec {
+      font-size: 0.8rem;
+      color: var(--green-light);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .edu-inst {
+      font-size: 0.875rem;
+      color: rgba(254,250,224,0.7);
+      margin-bottom: 0.5rem;
+    }
+
+    .edu-meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .edu-badge {
+      background: rgba(116,198,157,0.2);
+      border: 1px solid rgba(116,198,157,0.3);
+      color: var(--green-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .cert-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .cert-card {
+      background: rgba(200,151,60,0.15);
+      border: 1px solid rgba(200,151,60,0.3);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .cert-icon { font-size: 2rem; flex-shrink: 0; }
+
+    .cert-title {
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 0.3rem;
+    }
+
+    .cert-detail {
+      font-size: 0.875rem;
+      color: rgba(254,250,224,0.7);
+      margin-bottom: 0.5rem;
+    }
+
+    .cert-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .cert-tags span {
+      background: rgba(116,198,157,0.15);
+      color: var(--green-light);
+      font-size: 0.72rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+    }
+
+    /* ── RESEARCH ── */
+    #research { background: var(--cream); }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .research-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .research-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .research-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--green-sage);
+      margin-bottom: 1rem;
+    }
+
+    .research-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--green-deep);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+      font-style: italic;
+    }
+
+    .research-body {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    .research-meta {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    .research-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .topic-tag {
+      background: var(--green-pale);
+      color: var(--green-mid);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+    }
+
+    /* ── PROFESSIONAL DEVELOPMENT ── */
+    #development { background: var(--white); }
+
+    .dev-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .dev-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: var(--transition);
+      border-bottom: 2px solid transparent;
+    }
+
+    .dev-card:hover {
+      border-bottom-color: var(--green-sage);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .dev-icon { font-size: 1.5rem; flex-shrink: 0; }
+
+    .dev-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--green-deep);
+      margin-bottom: 0.25rem;
+    }
+
+    .dev-detail {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ── LANGUAGES ── */
+    .lang-grid {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--cream-dark);
+    }
+
+    .lang-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .lang-ring {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .lang-ring.native  { background: var(--green-deep); color: var(--white); }
+    .lang-ring.fluent  { background: var(--green-sage); color: var(--white); }
+    .lang-ring.conv    { background: var(--green-pale); color: var(--green-deep); }
+
+    .lang-name  { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); }
+    .lang-level { font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--green-deep);
+      text-align: center;
+    }
+
+    #contact .section-label { color: var(--green-light); justify-content: center; }
+    #contact .section-label::before { background: var(--green-light); }
+    #contact h2.section-title { color: var(--white); text-align: center; }
+    #contact .section-sub { color: rgba(254,250,224,0.6); text-align: center; margin: 0 auto 3rem; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      transition: var(--transition);
+      text-decoration: none;
+      display: block;
+    }
+
+    .contact-card:hover {
+      background: rgba(255,255,255,0.14);
+      transform: translateY(-4px);
+    }
+
+    .contact-card .icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .contact-card .ct-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: var(--green-light); margin-bottom: 0.25rem; font-weight: 600; }
+    .contact-card .ct-value { font-size: 0.95rem; color: var(--white); font-weight: 500; word-break: break-word; }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.85rem;
+      color: rgba(254,250,224,0.4);
+    }
+
+    .footer-note span { color: var(--green-light); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+      .hero-visual { display: none; }
+      .hero-pills, .hero-cta { justify-content: center; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .edu-grid { grid-template-columns: 1fr; }
+      .research-grid { grid-template-columns: 1fr; }
+      .dev-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .skills-grid { grid-template-columns: 1fr; }
+      .dev-grid { grid-template-columns: 1fr; }
+      section { padding: 3.5rem 1.25rem; }
+    }
+
+    /* ── SCROLL REVEAL (simple) ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo">Ashima <span>Abdul Kareem</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+
+  <!-- Decorative leaf SVGs -->
+  <svg class="leaf-deco top-right" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M380 20 C380 20 100 60 60 340 C60 340 200 280 280 180 C360 80 380 20 380 20Z" fill="#74C69D"/>
+    <path d="M380 20 C380 20 220 120 180 300" stroke="#D8F3DC" stroke-width="2" fill="none"/>
+  </svg>
+
+  <svg class="leaf-deco bottom-left" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 330 C20 330 300 290 340 10 C340 10 200 70 120 170 C40 270 20 330 20 330Z" fill="#40916C"/>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">Horticulture & Landscape Design</div>
+      <h1 class="hero-name">Ashima<br/><em>Abdul Kareem</em></h1>
+      <p class="hero-title">M.Sc Horticulture · AutoCAD-Certified Designer · Published Researcher</p>
+      <p class="hero-desc">
+        Combining deep botanical science with CAD proficiency to design sustainable landscapes and advance horticultural research in the UAE. Passionate about arid-environment agriculture and food security.
+      </p>
+      <div class="hero-pills">
+        <span class="pill">AutoCAD · SketchUp Pro · Lumion</span>
+        <span class="pill">Floriculture & Landscaping</span>
+        <span class="pill">IJECC Published</span>
+        <span class="pill">Abu Dhabi, UAE</span>
+      </div>
+      <div class="hero-cta">
+        <a href="mailto:ashimaak25@gmail.com" class="btn btn-primary">✉ Get in Touch</a>
+        <a href="#about" class="btn btn-outline">View Profile ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <!-- Botanical SVG illustration -->
+          <svg class="avatar-svg" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stem -->
+            <path d="M110 200 L110 80" stroke="#74C69D" stroke-width="3" stroke-linecap="round"/>
+            <!-- Main leaf left -->
+            <path d="M110 130 C110 130 60 110 50 75 C50 75 90 80 110 130Z" fill="#40916C" opacity="0.9"/>
+            <path d="M110 130 C86 112 68 95 50 75" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+            <!-- Main leaf right -->
+            <path d="M110 130 C110 130 160 110 170 75 C170 75 130 80 110 130Z" fill="#40916C" opacity="0.9"/>
+            <path d="M110 130 C134 112 152 95 170 75" stroke="#2D6A4F" stroke-width="1.5" fill="none"/>
+            <!-- Upper leaf left -->
+            <path d="M110 100 C110 100 72 85 68 58 C68 58 98 65 110 100Z" fill="#52B788" opacity="0.85"/>
+            <!-- Upper leaf right -->
+            <path d="M110 100 C110 100 148 85 152 58 C152 58 122 65 110 100Z" fill="#52B788" opacity="0.85"/>
+            <!-- Top flower -->
+            <circle cx="110" cy="55" r="18" fill="#C8973C" opacity="0.9"/>
+            <circle cx="110" cy="55" r="10" fill="#E8C87A"/>
+            <circle cx="110" cy="55" r="5" fill="#1B4332"/>
+            <!-- Flower petals -->
+            <ellipse cx="110" cy="32" rx="5" ry="10" fill="#E8C87A" opacity="0.7"/>
+            <ellipse cx="110" cy="78" rx="5" ry="10" fill="#E8C87A" opacity="0.7"/>
+            <ellipse cx="87" cy="55" rx="10" ry="5" fill="#E8C87A" opacity="0.7"/>
+            <ellipse cx="133" cy="55" rx="10" ry="5" fill="#E8C87A" opacity="0.7"/>
+            <ellipse cx="94" cy="39" rx="5" ry="10" fill="#E8C87A" opacity="0.6" transform="rotate(-45 94 39)"/>
+            <ellipse cx="126" cy="39" rx="5" ry="10" fill="#E8C87A" opacity="0.6" transform="rotate(45 126 39)"/>
+            <ellipse cx="94" cy="71" rx="5" ry="10" fill="#E8C87A" opacity="0.6" transform="rotate(45 94 71)"/>
+            <ellipse cx="126" cy="71" rx="5" ry="10" fill="#E8C87A" opacity="0.6" transform="rotate(-45 126 71)"/>
+            <!-- Small side leaves -->
+            <path d="M110 155 C110 155 78 148 72 128 C72 128 98 135 110 155Z" fill="#74C69D" opacity="0.8"/>
+            <path d="M110 155 C110 155 142 148 148 128 C148 128 122 135 110 155Z" fill="#74C69D" opacity="0.8"/>
+            <!-- Ground dots -->
+            <circle cx="95" cy="205" r="3" fill="#40916C" opacity="0.5"/>
+            <circle cx="110" cy="208" r="4" fill="#40916C" opacity="0.6"/>
+            <circle cx="125" cy="205" r="3" fill="#40916C" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="num">M.Sc</span>
+            <span class="label">Horticulture</span>
+          </div>
+          <div class="stat-card">
+            <span class="num">1</span>
+            <span class="label">Publication</span>
+          </div>
+          <div class="stat-card">
+            <span class="num">120h</span>
+            <span class="label">CAD Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">Rooted in Science,<br/>Shaped by the Field</h2>
+    <p class="section-sub">A horticulture specialist bringing together research, design, and field experience.</p>
+
+    <div class="about-grid reveal">
+      <div>
+        <div class="about-card">
+          <h3>Profile</h3>
+          <div class="info-row">
+            <span class="icon">📍</span>
+            <span class="key">Location</span>
+            <span class="val">Abu Dhabi, UAE</span>
+          </div>
+          <div class="info-row">
+            <span class="icon">✉️</span>
+            <span class="key">Email</span>
+            <span class="val">ashimaak25@gmail.com</span>
+          </div>
+          <div class="info-row">
+            <span class="icon">📞</span>
+            <span class="key">Phone</span>
+            <span class="val">+971 56 461 8122</span>
+          </div>
+          <div class="info-row">
+            <span class="icon">🌐</span>
+            <span class="key">Languages</span>
+            <span class="val">English, Malayalam, Hindi, Tamil</span>
+          </div>
+          <div class="info-row">
+            <span class="icon">🎓</span>
+            <span class="key">Degree</span>
+            <span class="val">M.Sc Horticulture (Floriculture & Landscaping)</span>
+          </div>
+          <div class="info-row">
+            <span class="icon">📋</span>
+            <span class="key">Status</span>
+            <span class="val">Open to Work — Abu Dhabi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>
+          I am an <strong>AutoCAD-certified Landscape Designer and Horticulture Specialist</strong> with an M.Sc in Horticulture (Floriculture & Landscaping) from Sam Higginbottom University (SHUATS). My work bridges the gap between deep plant science and the precision of technical design — from ornamental floriculture to site plans and 3D landscape visualization.
+        </p>
+        <p>
+          My journey spans <strong>government agricultural field operations</strong> as an Agricultural Officer at PCARD Bank, Kerala, where I conducted farm inspections, managed loan file portfolios, and coordinated stakeholder reporting. Alongside this, I completed a <strong>120-hour Professional Diploma in Architecture CAD</strong> (AutoCAD, Lumion, SketchUp Pro) at CADD Centre Bangalore.
+        </p>
+        <p>
+          I am a <strong>published researcher</strong> in the International Journal of Environment and Climate Change (IJECC), with a focus on post-harvest horticulture. I have also developed a PhD research proposal on sustainable horticultural practices for UAE's arid conditions — aligned with the UAE National Food Security Strategy 2051.
+        </p>
+        <div class="about-highlight">
+          "She is not starting from scratch. She is resuming from a position of strength — with field experience, published research, and a certified design skillset."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Skills & Competencies</h2>
+    <p class="section-sub">A multidisciplinary toolkit spanning design software, plant sciences, field operations, and research.</p>
+
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <span class="skill-icon">🖥️</span>
+        <h3>CAD & Visualization</h3>
+        <ul class="skill-list">
+          <li>AutoCAD (Civil & Architectural)</li>
+          <li>AutoCAD 2D & 3D Modeling</li>
+          <li>SketchUp Pro</li>
+          <li>Lumion 3D Rendering & Animation</li>
+          <li>Site Plans & Elevations</li>
+          <li>Photorealistic Rendering Workflows</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-icon">🌿</span>
+        <h3>Landscape & Design</h3>
+        <ul class="skill-list">
+          <li>Landscape Layout & Planning</li>
+          <li>Planting Design & Plant Selection</li>
+          <li>Hardscape Detailing</li>
+          <li>Site Analysis & Field Survey</li>
+          <li>Sustainable Landscape Practices</li>
+          <li>Arid-Adapted Species Selection</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-icon">🌸</span>
+        <h3>Horticulture Sciences</h3>
+        <ul class="skill-list">
+          <li>Floriculture & Ornamental Plants</li>
+          <li>Crop Physiology & Agronomy</li>
+          <li>Post-Harvest Technology</li>
+          <li>Integrated Crop Management</li>
+          <li>Soil Fertility & Irrigation Planning</li>
+          <li>Pest Identification</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-icon">🔬</span>
+        <h3>Research Methods</h3>
+        <ul class="skill-list">
+          <li>Experimental Design</li>
+          <li>Statistical Analysis</li>
+          <li>Scientific Writing & Publication</li>
+          <li>Literature Review</li>
+          <li>Post-Harvest Treatment Analysis</li>
+          <li>Plant Physiology Experiments</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-icon">🏛️</span>
+        <h3>Agricultural Operations</h3>
+        <ul class="skill-list">
+          <li>Farm Management & Field Surveys</li>
+          <li>Agricultural Finance & Loan Processing</li>
+          <li>Agricultural Scheme Administration</li>
+          <li>Performance Reporting</li>
+          <li>Stakeholder Coordination</li>
+          <li>Value Added Composting</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-icon">💼</span>
+        <h3>Professional Skills</h3>
+        <ul class="skill-list">
+          <li>MS Office Suite</li>
+          <li>Technical Report Writing</li>
+          <li>Client Presentation</li>
+          <li>Field Decision Making</li>
+          <li>Team Leadership</li>
+          <li>Multilingual Communication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Work Experience</div>
+    <h2 class="section-title">Professional Journey</h2>
+    <p class="section-sub">Field-tested expertise across government agriculture, finance, and research training.</p>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Agricultural Officer</div>
+            <span class="timeline-date">Jul 2024 – Jan 2025</span>
+          </div>
+          <div class="timeline-org">PCARD Bank — Primary Co-operative Agricultural and Rural Development Bank, Kanayannur, Kerala (under KSCARDB)</div>
+          <ul class="timeline-points">
+            <li>Processed and evaluated 19+ agricultural loan files monthly across Kanayannur and Angamaly branches, ensuring compliance with banking and agricultural credit norms.</li>
+            <li>Conducted field visits to assess farm conditions, crop status, and borrower viability for agricultural loan approval.</li>
+            <li>Performed arrear collection fieldwork, contacting 40+ borrowers per month with strong resolution rates.</li>
+            <li>Prepared 13 valuation reports in January 2025 and submitted monthly performance reports covering file disposal and scheme-wise loan data.</li>
+            <li>Applied field survey skills to assess land use, crop coverage, and site conditions across multiple farm sites — directly transferable to landscape site surveys.</li>
+            <li>Liaised between farmers and the bank to facilitate timely credit disbursement under government-sponsored agricultural schemes (FS, ELS, NFS, RHS, KCC).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">RAWE Trainee — Integrated Farming & Agriculture Technology</div>
+            <span class="timeline-date">2021 – 2022</span>
+          </div>
+          <div class="timeline-org">Tamil Nadu Agricultural University (TNAU), Radhapuram, India</div>
+          <ul class="timeline-points">
+            <li>Gained hands-on exposure to integrated farming systems, poultry farming, and advanced agricultural technologies.</li>
+            <li>Developed knowledge of innovative agri-business models and sustainable farming practices.</li>
+            <li>Participated in crop health monitoring, soil testing, and field data collection activities.</li>
+            <li>Studied plant growth systems, soil management, and ornamental/crop plant selection in field conditions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Academic Foundation</h2>
+    <p class="section-sub">Postgraduate specialisation in horticulture combined with certified technical design training.</p>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-degree">M.Sc Horticulture</div>
+        <div class="edu-spec">Floriculture & Landscaping</div>
+        <div class="edu-inst">Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS), Allahabad, India</div>
+        <div class="edu-meta">
+          <span class="edu-badge">2021 – 2023</span>
+          <span class="edu-badge">CGPA: 6.89 / 10</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-degree">B.Sc (Hons) Agriculture</div>
+        <div class="edu-spec">Integrated Agriculture Sciences</div>
+        <div class="edu-inst">Tamil Nadu Agricultural University (TNAU) / Indian Agriculture College, Radhapuram, Tirunelveli, India</div>
+        <div class="edu-meta">
+          <span class="edu-badge">2017 – 2022</span>
+          <span class="edu-badge">CGPA: 7.33 / 10</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-degree">Higher Secondary (Plus Two)</div>
+        <div class="edu-spec">Science Stream</div>
+        <div class="edu-inst">Nirmala Higher Secondary School, Aluva, Kerala</div>
+        <div class="edu-meta">
+          <span class="edu-badge">2015 – 2017</span>
+          <span class="edu-badge">87%</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-degree">SSLC (10th Standard)</div>
+        <div class="edu-spec">Secondary Education</div>
+        <div class="edu-inst">Nirmala Higher Secondary School, Aluva, Kerala</div>
+        <div class="edu-meta">
+          <span class="edu-badge">2015</span>
+          <span class="edu-badge">92%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-section reveal" style="margin-top: 2rem;">
+      <h3>Professional Certification</h3>
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <div>
+          <div class="cert-title">Professional Diploma in Architecture CAD</div>
+          <div class="cert-detail">CADD Centre, Bangalore, India · 120 Hours · June 2024</div>
+          <div class="cert-tags">
+            <span>AutoCAD Civil & Architectural</span>
+            <span>Lumion 3D Rendering</span>
+            <span>SketchUp Pro</span>
+            <span>2D Drafting & 3D Modelling</span>
+            <span>Site Plans & Elevations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="container">
+    <div class="section-label">Research</div>
+    <h2 class="section-title">Research & Publications</h2>
+    <p class="section-sub">Peer-reviewed research in ornamental horticulture, with a forward-looking PhD proposal for UAE's arid conditions.</p>
+
+    <div class="research-grid reveal">
+      <div class="research-card">
+        <div class="research-type">📄 Published Research</div>
+        <div class="research-title">"Effect of Sucrose and Aluminium Sulphate on Vase Life of Cut Chrysanthemum"</div>
+        <div class="research-body">
+          Research investigating the effects of post-harvest chemical treatments on vase life extension of cut chrysanthemums. Employed controlled experimental design, statistical analysis, and scientific documentation to quantify treatment efficacy.
+        </div>
+        <div class="research-meta">International Journal of Environment and Climate Change (IJECC) · 2023 · Ashima Abdul Kareem</div>
+        <div class="research-topics">
+          <span class="topic-tag">Post-Harvest Physiology</span>
+          <span class="topic-tag">Floriculture</span>
+          <span class="topic-tag">Ornamental Horticulture</span>
+          <span class="topic-tag">Experimental Design</span>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-type">🔭 PhD Research Proposal</div>
+        <div class="research-title">"Sustainable Horticultural Practices for Enhancing Crop Productivity under Arid Conditions in the UAE"</div>
+        <div class="research-body">
+          An original research proposal addressing food and horticultural productivity in UAE's arid climate. Outlines novel interventions combining water-smart irrigation, post-harvest technology, and arid-adapted cultivar selection — directly aligned with the UAE National Food Security Strategy 2051.
+        </div>
+        <div class="research-meta">Research Proposal · Ready to Submit · Targeting UAEU / Khalifa University / ICBA</div>
+        <div class="research-topics">
+          <span class="topic-tag">Arid Agriculture</span>
+          <span class="topic-tag">Water-Smart Irrigation</span>
+          <span class="topic-tag">Food Security</span>
+          <span class="topic-tag">UAE National Strategy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL DEVELOPMENT -->
+<section id="development">
+  <div class="container">
+    <div class="section-label">Development</div>
+    <h2 class="section-title">Professional Development</h2>
+    <p class="section-sub">Continuous learning through international seminars, certifications, and practical training programmes.</p>
+
+    <div class="dev-grid reveal">
+      <div class="dev-card">
+        <div class="dev-icon">🌍</div>
+        <div>
+          <div class="dev-title">International Seminar</div>
+          <div class="dev-detail">Exotic & Underutilized Horticultural Crops: Priorities & Emerging Trends — ICAR-IIHR, Bengaluru · Oct 2023</div>
+        </div>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-icon">♻️</div>
+        <div>
+          <div class="dev-title">Value Added Composting Technologies</div>
+          <div class="dev-detail">Online Training Certification — TIAC, Radhapuram · Sustainable organic waste management</div>
+        </div>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-icon">🌱</div>
+        <div>
+          <div class="dev-title">Horticulture Prospects</div>
+          <div class="dev-detail">Certificate of Participation — Finura Bioteks · Industry practices and emerging horticulture trends</div>
+        </div>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-icon">📝</div>
+        <div>
+          <div class="dev-title">UGC NET June 2025</div>
+          <div class="dev-detail">Applied (Agricultural Sciences) — Eligibility for Lectureship / Junior Research Fellowship (JRF)</div>
+        </div>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-icon">🏗️</div>
+        <div>
+          <div class="dev-title">Architecture CAD Diploma</div>
+          <div class="dev-detail">Professional Diploma · CADD Centre Bangalore · 120 hours · AutoCAD, Lumion, SketchUp Pro</div>
+        </div>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-icon">🚜</div>
+        <div>
+          <div class="dev-title">Rural Area Work Experience</div>
+          <div class="dev-detail">TNAU, Radhapuram · Integrated farming, agri-business models, advanced agricultural technologies</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="lang-grid reveal">
+      <div class="lang-item">
+        <div class="lang-ring native">Ma</div>
+        <div class="lang-name">Malayalam</div>
+        <div class="lang-level">Native</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-ring fluent">En</div>
+        <div class="lang-name">English</div>
+        <div class="lang-level">Fluent</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-ring conv">Hi</div>
+        <div class="lang-name">Hindi</div>
+        <div class="lang-level">Conversational</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-ring conv">Ta</div>
+        <div class="lang-name">Tamil</div>
+        <div class="lang-level">Conversational</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-sub">Open to landscape design roles, horticulture specialist positions, and PhD research opportunities in Abu Dhabi & UAE.</p>
+
+    <div class="contact-grid reveal">
+      <a href="mailto:ashimaak25@gmail.com" class="contact-card">
+        <span class="icon">✉️</span>
+        <div class="ct-label">Email</div>
+        <div class="ct-value">ashimaak25@gmail.com</div>
+      </a>
+
+      <a href="tel:+971564618122" class="contact-card">
+        <span class="icon">📞</span>
+        <div class="ct-label">Phone (UAE)</div>
+        <div class="ct-value">+971 56 461 8122</div>
+      </a>
+
+      <div class="contact-card">
+        <span class="icon">📍</span>
+        <div class="ct-label">Location</div>
+        <div class="ct-value">Abu Dhabi, United Arab Emirates</div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Ashima Abdul Kareem · M.Sc Horticulture · AutoCAD-Certified Landscape Designer · Published Researcher<br/>
+      Available for roles in <span>Landscape Design · Horticulture Research · Agriculture Specialist · PhD Fellowship</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
